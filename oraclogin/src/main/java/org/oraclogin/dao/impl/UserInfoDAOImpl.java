@@ -122,8 +122,11 @@ public class UserInfoDAOImpl extends JdbcDaoSupport implements UserInfoDAO {
 	public boolean updatePassword(String un, String password) {
 		System.out.println("un -> "+ un +"pswd -> "+password);
 		String sql = "UPDATE users u SET u.password = ? WHERE u.username = ?";
+		//delete token from database if password is updated
+		String delsql = "DELETE * from users_token u WHERE u.userName = ?";
 		try{
 			this.getJdbcTemplate().update(sql, password, un);
+			this.getJdbcTemplate().update(delsql, un);
 			return true;
 		} catch (Exception e)
 		{
