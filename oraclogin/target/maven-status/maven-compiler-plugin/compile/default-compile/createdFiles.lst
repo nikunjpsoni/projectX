@@ -1,0 +1,16 @@
+org/oraclogin/service/EmailService.class
+org/oraclogin/service/impl/EmailServiceImpl.class
+org/oraclogin/service/UserInfoService.class
+org/oraclogin/mapper/UserInfoMapper.class
+org/oraclogin/config/SpringSecurityInitializer.class
+org/oraclogin/service/impl/UserInfoServiceImpl.class
+org/oraclogin/model/UserInfo.class
+org/oraclogin/authentication/MyDBAuthenticationService.class
+org/oraclogin/config/SpringWebAppInitializer.class
+org/oraclogin/controller/MainController.class
+org/oraclogin/dao/UserInfoDAO.class
+org/oraclogin/model/UsersToken.class
+org/oraclogin/config/ApplicationContextConfig.class
+org/oraclogin/config/WebSecurityConfig.class
+org/oraclogin/config/WebMvcConfig.class
+org/oraclogin/dao/impl/UserInfoDAOImpl.class
